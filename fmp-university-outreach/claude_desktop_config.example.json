@@ -1,0 +1,15 @@
+{
+  "_comment": "Drop this snippet into your Mac mini's Claude desktop config. On macOS, the file lives at ~/Library/Application Support/Claude/claude_desktop_config.json. Merge the mcpServers block into your existing config rather than overwriting the whole file.",
+  "mcpServers": {
+    "fmp": {
+      "command": "node",
+      "args": [
+        "/REPLACE/WITH/ABSOLUTE/PATH/TO/fmp-university-outreach/fmp-mcp-server/dist/index.js"
+      ],
+      "env": {
+        "SALESMATE_SESSION_KEY": "paste-session-key-here",
+        "SALESMATE_WORKSPACE": "findmyplace"
+      }
+    }
+  }
+}
